@@ -1,5 +1,5 @@
-var debug = require('debug')('module');
+var color = require('colors');
 
 setInterval(function(){
-  debug('Module is doing something HAHAHAHA');
+  console.log('Module is doing something HAHAHAHA'.blue);
 }, 1000);
