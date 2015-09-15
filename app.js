@@ -5,6 +5,8 @@ setInterval(function(){
     console.log(new Date().toISOString());
 }, 5000);
 
-setTimeout(function(){
-    app.listen(8080);
-}, 5000);
+app.listen(8080);
+
+app.get('/', function(req, res){
+    res.send('Hello, first version !');
+});
