@@ -8,5 +8,5 @@ setInterval(function(){
 app.listen(8080);
 
 app.get('/', function(req, res){
-    res.send('Hello, first version !');
+    res.send('Hello, second version !');
 });
