@@ -3,7 +3,7 @@ var app = express();
 
 setInterval(function(){
     console.log(new Date().toISOString());
-}, 500);
+}, 5000);
 
 app.listen(8080);
 
