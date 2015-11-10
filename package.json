@@ -9,6 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "install": "gem install --install-dir /home/bas/ruby/2.2.0 compass && compass --help",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
