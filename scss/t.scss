@@ -1,0 +1,51 @@
+/**
+ * MUST BE ONLY USED IN COMPASS FILES
+ */
+
+@mixin selected(){
+  color: white;
+  background-color: #0081C2;
+  @include background-image(linear-gradient(#08C, #0077B3));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #08C), color-stop(100%, #0077B3));
+}
+
+@mixin redbanner(){
+  background-color:#C91E13;
+  @include background-image(linear-gradient(top, #C91E13, #8E1509));
+  color: #ffffff;
+}
+
+@mixin redbanner-hover(){
+  @include background-image(linear-gradient(top, #F45D52, #901409));
+  color: #ffffff;
+}
+
+
+@mixin redbanner-with-border(){
+  @include redbanner();
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@mixin redbanner-title(){
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.72);
+  color: rgb(255, 255, 255);
+}
+
+@mixin spacer(){
+  padding:0px 12px;
+  line-height: 33px;
+  margin-bottom: 0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+
+  cursor: default;
+  @include background-image(linear-gradient(top, white, #E6E6E6));
+  @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05));
+  border: 1px solid;
+  border-color:#E6E6E6 #E6E6E6 #BFBFBF;
+  border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-left: 0px;
+  background-color: #E6E6E6;
+  white-space: normal;
+  vertical-align: middle;
+  text-align:center;
+}

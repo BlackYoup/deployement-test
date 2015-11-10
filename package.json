@@ -5,11 +5,14 @@
   "main": "app.js",
   "dependencies": {
     "colors": "^1.0.3",
-    "express": "^4.9.7"
+    "express": "^4.9.7",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-compass": "^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
-    "install": "gem install --install-dir /home/bas/ruby/2.2.0 compass && compass --help",
+    "install": "gem install --user-install animate-sass && grunt compass",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
