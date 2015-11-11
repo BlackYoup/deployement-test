@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log(new Date().toISOString());
+    console.log("<somehtml>");
 }, 5001);
 
 app.listen(8080);
