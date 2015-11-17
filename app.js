@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("<somehtml yoloswag>");
+    console.log("<somehtml yoloswag keruspe :D>");
 }, 5001);
 
 app.listen(8080);
