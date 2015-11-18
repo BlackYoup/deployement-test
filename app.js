@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("dernier test");
+    console.log("dernier test, mais vraiment le dernier :)");
 }, 5001);
 
 app.listen(8080);
