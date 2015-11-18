@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log(":D>");
+    console.log("this looks like");
 }, 5001);
 
 app.listen(8080);
