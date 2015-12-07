@@ -1,3 +1,3 @@
 [
-  "* * * * * /usr/bin/sh $ROOT/clevercloud/cron.sh"
+  "* * * * * $ROOT/clevercloud/cron.sh"
 ]
