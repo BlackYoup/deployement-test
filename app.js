@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("gwendal masqué ohé ohé");
+    console.log("gwendal masqué ohé ohé, GWEENNDAAAAAAAl, GWENDAAAAL MASQUE");
 }, 5001);
 
 app.listen(8080);
