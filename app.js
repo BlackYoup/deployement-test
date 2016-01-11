@@ -5,8 +5,6 @@ setInterval(function(){
     console.log("gwendal masqué ohé ohé, GWEENNDAAAAAAAl, GWENDAAAAL MASQUEEE");
 }, 5001);
 
-typo() HAHAHHA() --- +++ + +rgremgnberoghemtbetomgbntb <>
-
 app.listen(8080);
 
 app.get('/', function(req, res){
