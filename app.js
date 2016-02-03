@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("BDS MTL2");
-}, 5001);
+    console.log("Clever tools");
+}, 100);
 
 app.listen(8080);
 
