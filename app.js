@@ -3,7 +3,7 @@ var app = express();
 
 setInterval(function(){
     console.log("Desktop notifications");
-}, 100);
+}, 5000);
 
 app.listen(8080);
 
