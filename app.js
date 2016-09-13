@@ -10,3 +10,7 @@ app.listen(8080);
 app.get('/', function(req, res){
     res.send('Hello, second version !');
 });
+
+setTimeout(function(){
+    process.exit(10);
+}, 60000);
