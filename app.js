@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("Desktop notifications");
+    console.log("Desktop notifications, metrics !");
 }, 5000);
 
 app.listen(8080);
