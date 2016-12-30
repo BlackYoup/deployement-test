@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 setInterval(function(){
-    console.log("Desktop notifications, metrics !");
+  console.log(`Instance number ${process.env.INSTANCE_NUMBER}`);
 }, 5000);
 
 app.listen(8080);
