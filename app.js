@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
 
-testestestenros'.rms'.o;
-
 setInterval(function(){
   console.log(`Instance number ${process.env.INSTANCE_NUMBER}: éêçâüï`);
 }, 5000);
