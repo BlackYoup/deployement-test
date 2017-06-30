@@ -10,6 +10,7 @@ app.listen(8080);
 app.use(function(req, res, next) {
   console.log("HEADERS", req.headers);
   var proto = req.headers["x-forwarded-proto"];
+  console.log("proto", proto);
 
   if(proto && proto != "https") {
     res.redirect("https://" + req.headers.host + req.url);
