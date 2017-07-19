@@ -3,11 +3,13 @@ var metrics = require('express-metrics');
 var app = express();
 
 app.use(metrics({
-  host: '127.0.0.1',
-  port: 8125,
-  prefix: 'my-app',
-  routes: {
-    getSlash: [{ path: '/', methods: ['get'] }]
+  statsd: {
+    host: '127.0.0.1',
+    port: 8125,
+    prefix: 'my-app',
+    routes: {
+      getSlash: [{ path: '/', methods: ['get'] }]
+    }
   }
 }));
 
