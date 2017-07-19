@@ -3,6 +3,7 @@ var metrics = require('express-metrics');
 var app = express();
 
 app.use(metrics({
+  port: 8081,
   statsd: {
     host: '127.0.0.1',
     port: 8125,
