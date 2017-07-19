@@ -1,5 +1,15 @@
 var express = require('express');
+var metrics = require('express-metrics');
 var app = express();
+
+app.use(metrics({
+  host: '127.0.0.1',
+  port: 8125,
+  prefix: 'my-app',
+  routes: {
+    getSlash: [{ path: '/', methods: ['get'] }]
+  }
+}));
 
 setInterval(function(){
   console.log(`Instance number ${process.env.INSTANCE_NUMBER}`, (new Date()).toUTCString());
