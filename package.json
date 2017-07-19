@@ -2,13 +2,8 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "colors": "^1.0.3",
     "express": "^4.9.7",
-    "express-metrics": "^1.1.0",
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-compass": "^1.1.1",
-    "node-sass": "^3.4.2"
+    "express-metrics": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
