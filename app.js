@@ -40,7 +40,7 @@ app.get('/', function(req, res){
 app.get('/test', function(req, res){
   res.send('heavy task starting..');
 
-  for(var i = 0; i < 100000000; i++){
+  for(var i = 0; i < 10000000000; i++){
     const y = "swag";
     const x = "yolo";
     const total = `${x}${y}`;
