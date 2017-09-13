@@ -36,3 +36,13 @@ app.use(function(req, res, next) {
 app.get('/', function(req, res){
     res.send('Hello, second version !');
 });
+
+app.get('/test', function(req, res){
+  res.send('heavy task starting..');
+
+  for(var i = 0; i < 100000000; i++){
+    const y = "swag";
+    const x = "yolo";
+    const total = `${x}${y}`;
+  }
+});
