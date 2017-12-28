@@ -24,12 +24,12 @@ function leak() {
 
   var leaks = [];
   setInterval(function() {
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 100000; i++) {
       leaks.push(new LeakingClass);
     }
 
     console.error('Leaks: %d', leaks.length);
-  }, 1000);
+  }, 10);
 }
 
 app.listen(8080);
