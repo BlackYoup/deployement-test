@@ -20,6 +20,20 @@ app.use(metrics({
 //  console.log(`Instance number ${process.env.INSTANCE_NUMBER}`, (new Date()).toUTCString());
 //}, 5000);
 
+function leak() {
+  function LeakingClass() {
+  }
+
+  var leaks = [];
+  setInterval(function() {
+    for (var i = 0; i < 100; i++) {
+      leaks.push(new LeakingClass);
+    }
+
+    console.error('Leaks: %d', leaks.length);
+  }, 1000);
+}
+
 app.listen(8080);
 
 app.use(function(req, res, next) {
@@ -47,4 +61,9 @@ app.get('/test', function(req, res){
     const x = "yolo";
     const total = `${x}${y}`;
   }
+});
+
+app.get("/leak", (req, res) => {
+  console.log("leaking memory!!");
+  res.status(200).end();
 });
