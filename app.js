@@ -14,9 +14,9 @@ app.use(metrics({
   }
 }));
 
-setInterval(function(){
-  console.log(`Instance number ${process.env.INSTANCE_NUMBER}`, (new Date()).toUTCString());
-}, 5000);
+//setInterval(function(){
+//  console.log(`Instance number ${process.env.INSTANCE_NUMBER}`, (new Date()).toUTCString());
+//}, 5000);
 
 app.listen(8080);
 
