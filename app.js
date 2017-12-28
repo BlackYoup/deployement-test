@@ -2,8 +2,6 @@ var express = require('express');
 var metrics = require('express-metrics');
 var app = express();
 
-SWAG: MEH~~~^><>[]
-
 app.use(metrics({
   port: 8081,
   statsd: {
