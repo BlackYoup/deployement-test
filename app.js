@@ -63,5 +63,6 @@ app.get('/test', function(req, res){
 
 app.get("/leak", (req, res) => {
   console.log("leaking memory!!");
-  res.status(200).end();
+  res.status(200).send("Leaking..");
+  leak();
 });
