@@ -32,7 +32,7 @@ function leak() {
   }, 10);
 }
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
 
 app.use(function(req, res, next) {
   console.log("HEADERS", req.headers);
