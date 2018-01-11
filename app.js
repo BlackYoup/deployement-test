@@ -1,6 +1,7 @@
 var express = require('express');
 var metrics = require('express-metrics');
 var app = express();
+var fs = require("fs");
 
 app.use(metrics({
   port: 8081,
@@ -49,6 +50,10 @@ app.use(function(req, res, next) {
 
 app.get('/', function(req, res){
     res.send('Hello, second version !');
+});
+
+app.get('/network', function(req, res) {
+  fs.createReadStream("/dev/urandom").pipe(res);
 });
 
 app.get('/test', function(req, res){
