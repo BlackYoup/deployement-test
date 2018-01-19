@@ -3,6 +3,8 @@ var metrics = require('express-metrics');
 var app = express();
 var fs = require("fs");
 
+process.exit(1);
+
 app.use(metrics({
   port: 8081,
   statsd: {
