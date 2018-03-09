@@ -5,7 +5,7 @@ app.get('/', function(req, res){
   res.send('Hello, second version !');
 });
 
-setTimeout(() => {
+setInterval(() => {
   console.log(new Date().toISOString());
 }, 1000);
 
